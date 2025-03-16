@@ -1,6 +1,8 @@
 html,
 body {
-    margin: 0px;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 .topRow,
@@ -8,7 +10,18 @@ body {
     text-align: center;
 }
 
-.leftNavigation {
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    width: 100%;
+    height:100vh;
+    border: 2px solid black;
+}
+
+
+/* .leftNavigation {
     position: fixed;
     height: 100vh;
     display: flex;
@@ -18,7 +31,7 @@ body {
     padding: 30px;
     gap: 20px;
     height: 300px;
-}
+} */
 
 a:active {
     color: green;
