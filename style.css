@@ -1,9 +1,27 @@
-html, body{
-    margin:0px;
+html,
+body {
+    margin: 0px;
 }
 
-.topRow, .copyright {
-text-align: center;
+.topRow,
+.copyright {
+    text-align: center;
+}
+
+.leftNavigation {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    height: 300px;
+}
+
+a:active {
+    color: green;
 }
 
 img {
@@ -11,3 +29,8 @@ img {
     height: 100px;
 }
 
+.imageBox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
