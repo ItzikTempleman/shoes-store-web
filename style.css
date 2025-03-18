@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(241, 150, 158);
 }
 
 #topRow {
@@ -24,7 +25,7 @@ body {
 #leftNavigation {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -68,10 +69,18 @@ img {
     border-top: 1px black solid;
 }
 
+
+#form-main{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    padding: 60px;
+}
+
 .form-grid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 1fr;
     width: fit-content;
     border: 0.5px solid black;
 }
@@ -83,17 +92,28 @@ img {
     border: 0.5px solid black;
 }
 
-.button-cell {
-    display: flex;
-    justify-content: center;
-    grid-column: 2/2;
-}
+
 
 .form-grid>div> * {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
+
+.button-cell {
+    display: flex;
+    grid-column: 2/2;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+button {
+    justify-self: center;
+    display: block;
+    text-align: center;
+    width: auto;
+}
