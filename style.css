@@ -73,14 +73,14 @@ img {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 2fr 1fr;
     width: fit-content;
-    border: 1px solid black;
+    border: 0.5px solid black;
 }
 
-.form-grid>div{
+.form-grid > div{
     display: flex;
     align-items: center;
     padding:10px;
-    border: 1px solid black;
+    border: 0.5px solid black;
 }
 
 .button-cell {
@@ -88,3 +88,12 @@ img {
     justify-content: center;
     grid-column: 2/2;
 }
+
+.form-grid>div> * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
